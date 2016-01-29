@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4eJ-Gd-fID">
+                                <rect key="frame" x="8" y="144" width="196" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="in meters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ra1-Cy-Dl6">
+                                <rect key="frame" x="242" y="148" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vf8-3F-hj0">
+                                <rect key="frame" x="135" y="273" width="51" height="30"/>
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="updateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BRS-gD-Npq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Click update for the Anwser" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gah-FS-Ifo">
+                                <rect key="frame" x="0.0" y="311" width="320" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rW6-5f-qIg">
+                                <rect key="frame" x="8" y="237" width="305" height="29"/>
+                                <segments>
+                                    <segment title="feet"/>
+                                    <segment title="mile"/>
+                                    <segment title="inch"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gah-FS-Ifo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0QZ-OL-Hlk"/>
+                            <constraint firstItem="Vf8-3F-hj0" firstAttribute="top" secondItem="rW6-5f-qIg" secondAttribute="bottom" constant="8" id="0m8-Zh-0e1"/>
+                            <constraint firstItem="rW6-5f-qIg" firstAttribute="top" secondItem="ra1-Cy-Dl6" secondAttribute="bottom" constant="68" id="3St-oL-7a9"/>
+                            <constraint firstItem="ra1-Cy-Dl6" firstAttribute="leading" secondItem="4eJ-Gd-fID" secondAttribute="trailing" constant="8" id="GBC-MJ-atU"/>
+                            <constraint firstItem="Vf8-3F-hj0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jgr-8m-AJJ"/>
+                            <constraint firstItem="gah-FS-Ifo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SAY-kw-ecZ"/>
+                            <constraint firstItem="gah-FS-Ifo" firstAttribute="top" secondItem="Vf8-3F-hj0" secondAttribute="bottom" constant="8" id="aE8-mK-alW"/>
+                            <constraint firstItem="rW6-5f-qIg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mTB-ff-T2P"/>
+                            <constraint firstItem="rW6-5f-qIg" firstAttribute="top" secondItem="4eJ-Gd-fID" secondAttribute="bottom" constant="63" id="n8l-Ic-EEQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputField" destination="4eJ-Gd-fID" id="U7s-cF-akh"/>
+                        <outlet property="outputField" destination="gah-FS-Ifo" id="yAv-Vz-v81"/>
+                        <outlet property="segmentController" destination="rW6-5f-qIg" id="wy8-f3-bdJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="321"/>
+        </scene>
+    </scenes>
+</document>
