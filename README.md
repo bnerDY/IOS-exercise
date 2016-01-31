@@ -1,3 +1,3 @@
 ### IOS-exercise
 =====
-Practice in IOS development following stanford online courses
+Practice in IOS development following coursera
