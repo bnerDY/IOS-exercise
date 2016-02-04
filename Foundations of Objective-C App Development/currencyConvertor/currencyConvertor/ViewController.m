@@ -41,10 +41,10 @@
     double euroValue = inputValue * currencies.EUR;
     double jpyValue = inputValue * currencies.JPY;
     double gbpValue = inputValue * currencies.GBP;
+
     NSString *euroString = [NSString stringWithFormat:@"%.2F",euroValue];
     NSString *jpyString = [NSString stringWithFormat:@"%.2F",jpyValue];
     NSString *gbpString = [NSString stringWithFormat:@"%.2F",gbpValue];
-
 
     self.currencyA.text = euroString;
     self.currencyB.text = jpyString;
