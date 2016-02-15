@@ -21,7 +21,6 @@
 }
 
 -(void) setInternalFields: (ToDoEntity *)incomingToDoEntity{
-
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateStyle:NSDateFormatterShortStyle];
     [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
@@ -29,9 +28,7 @@
 
     self.toDoTitleLabel.text = incomingToDoEntity.toDoTitle;
     self.localToDoEntity = incomingToDoEntity;
-
     self.toDoDueDateLabel.text = [dateFormatter stringFromDate: incomingToDoEntity.toDoDueDate];
-
 }
 
 @end

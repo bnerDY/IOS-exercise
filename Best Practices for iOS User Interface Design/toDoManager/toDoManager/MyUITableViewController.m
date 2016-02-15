@@ -65,7 +65,7 @@
     NSError *err;
     BOOL fetchSucceeded = [self.resultsController performFetch:&err];
     if(!fetchSucceeded){
-        @throw [NSException exceptionWithName:NSInternalInconsistencyException reason:@"Couldn;t fetch" userInfo:nil];
+        @throw [NSException exceptionWithName:NSInternalInconsistencyException reason:@"Couldn't fetch" userInfo:nil];
     }
 }
 
@@ -89,7 +89,7 @@
         }
         case NSFetchedResultsChangeMove:
             [[self tableView]deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-            [[self tableView]insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            [[self tableView]insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
             break;
     }
 }
@@ -122,4 +122,6 @@
 -(void) receiveMOC:(NSManagedObjectContext *)incomingMOC{
     self.managedObjectContext = incomingMOC;
 }
+
+
 @end
