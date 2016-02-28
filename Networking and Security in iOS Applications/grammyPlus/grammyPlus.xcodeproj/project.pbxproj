@@ -13,6 +13,7 @@
 		5B7CB9DD1C8265C900B2A875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CB9DB1C8265C900B2A875 /* Main.storyboard */; };
 		5B7CB9DF1C8265C900B2A875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CB9DE1C8265C900B2A875 /* Assets.xcassets */; };
 		5B7CB9E21C8265C900B2A875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CB9E01C8265C900B2A875 /* LaunchScreen.storyboard */; };
+		5B7CB9EA1C826ED600B2A875 /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B7CB9E91C826ED600B2A875 /* icon.jpg */; };
 		F15FC1BFB82549550F3BF6E1 /* libPods-grammyPlus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B359585A633F2C38E778FD6 /* libPods-grammyPlus.a */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		5B7CB9DE1C8265C900B2A875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B7CB9E11C8265C900B2A875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B7CB9E31C8265C900B2A875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B7CB9E91C826ED600B2A875 /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon.jpg; path = ../../../../Pictures/icon.jpg; sourceTree = "<group>"; };
 		626570B9F1844DBFDBE7380E /* Pods-grammyPlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grammyPlus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-grammyPlus/Pods-grammyPlus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 		5B7CB9D21C8265C900B2A875 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5B7CB9E91C826ED600B2A875 /* icon.jpg */,
 				5B7CB9D31C8265C900B2A875 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -163,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B7CB9EA1C826ED600B2A875 /* icon.jpg in Resources */,
 				5B7CB9E21C8265C900B2A875 /* LaunchScreen.storyboard in Resources */,
 				5B7CB9DF1C8265C900B2A875 /* Assets.xcassets in Resources */,
 				5B7CB9DD1C8265C900B2A875 /* Main.storyboard in Resources */,

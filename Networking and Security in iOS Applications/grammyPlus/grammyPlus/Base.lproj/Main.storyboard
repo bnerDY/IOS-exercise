@@ -1,25 +1,79 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="z2f-mK-V8H">
+                                <rect key="frame" x="0.0" y="124" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="z2f-mK-V8H" secondAttribute="height" multiplier="1:1" id="kdj-1Q-Loc"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHa-sG-RNo">
+                                <rect key="frame" x="24" y="20" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Svn-XA-uQ8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62U-UM-wxz">
+                                <rect key="frame" x="252" y="20" width="48" height="30"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ntn-aS-xJV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dpb-yx-9oP">
+                                <rect key="frame" x="134" y="538" width="53" height="30"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NYO-6J-QxR"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="z2f-mK-V8H" secondAttribute="trailing" constant="-20" id="60s-5B-Z2J"/>
+                            <constraint firstItem="dpb-yx-9oP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BHi-fM-VPu"/>
+                            <constraint firstItem="62U-UM-wxz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="JhY-tA-plU"/>
+                            <constraint firstItem="z2f-mK-V8H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="REa-lb-esZ"/>
+                            <constraint firstItem="62U-UM-wxz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="V4b-R8-4Fw"/>
+                            <constraint firstItem="z2f-mK-V8H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WVO-xi-9pd"/>
+                            <constraint firstItem="z2f-mK-V8H" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="f4O-bT-6fW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dpb-yx-9oP" secondAttribute="bottom" id="gfr-rA-tkb"/>
+                            <constraint firstItem="nHa-sG-RNo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="irU-jU-RgN"/>
+                            <constraint firstItem="nHa-sG-RNo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="l37-Fs-i9L"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="z2f-mK-V8H" id="N7L-Vn-aK7"/>
+                        <outlet property="loginButton" destination="nHa-sG-RNo" id="iy3-aX-rWF"/>
+                        <outlet property="logoutButton" destination="62U-UM-wxz" id="4hj-1N-EGX"/>
+                        <outlet property="refreshButton" destination="dpb-yx-9oP" id="udR-f4-I7u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="129.59999999999999" y="321.39333333333332"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon.jpg" width="368" height="485"/>
+    </resources>
 </document>
