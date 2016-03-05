@@ -18,7 +18,7 @@
 @implementation ViewController
 - (IBAction)scheduleTapped:(id)sender {
     [self requestPermissionToNotify];
-    [self createNotification:5];
+    [self createNotification:15];
 }
 
 -(void) requestPermissionToNotify{

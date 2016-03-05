@@ -17,18 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cUm-68-i0I">
-                                <rect key="frame" x="55" y="269" width="211" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cUm-68-i0I">
+                                <rect key="frame" x="55" y="269" width="218" height="30"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xor-wy-UYi">
-                                        <rect key="frame" x="0.0" y="0.0" width="211" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xor-wy-UYi">
+                                        <rect key="frame" x="0.0" y="0.0" width="218" height="30"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ey0-yt-D5x">
-                                                <rect key="frame" x="0.0" y="0.0" width="211" height="30"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ey0-yt-D5x">
+                                                <rect key="frame" x="0.0" y="0.0" width="218" height="30"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="648-0b-BJE">
-                                                        <rect key="frame" x="0.0" y="0.0" width="211" height="30"/>
-                                                        <state key="normal" title="Schedule an alert in 5 seconds"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="648-0b-BJE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="218" height="30"/>
+                                                        <state key="normal" title="Schedule an alert in 15 seconds"/>
                                                         <connections>
                                                             <action selector="scheduleTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EcI-3P-gvF"/>
                                                         </connections>
