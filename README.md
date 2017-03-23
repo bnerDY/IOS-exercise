@@ -1,3 +1,3 @@
-### IOS-exercise
-=====
-Practice in IOS development following coursera
+### IOS-repo
+---------------------------------------
+Repository for IOS related development.
